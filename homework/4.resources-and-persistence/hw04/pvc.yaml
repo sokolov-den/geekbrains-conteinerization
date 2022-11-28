@@ -2,11 +2,12 @@
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: webdav
+  name: pg-storage
 spec:
   accessModes:
   - ReadWriteOnce
   resources:
     requests:
-      storage: 2Gi
+      storage: 10Gi
   storageClassName: csi-ceph-hdd-gz1
+
