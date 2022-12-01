@@ -3,6 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: net-tool
+  namespace: gb5
 spec:
   replicas: 1
   selector:
